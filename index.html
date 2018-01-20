@@ -8,19 +8,20 @@
 	<link rel="stylesheet" href="main.css">
 	<TITLE>Simon DEFRENET</TITLE>
 	<STYLE TYPE="text/css" media="all">
-		@page { margin-right: 0.52in; margin-top: 0.5in; margin-bottom: 0.37in }
+		@page {margin-right: 0.52in; margin-top: 0.5in; margin-bottom: 0.37in }
 		H3 {text-align:center; margin-bottom: 30px; font-family: sans-serif; font-size: 24px; margin-top: 50px; color: #243f60}
 		H4 {color: #243f60;margin-bottom: 10px}
 		P { text-align: justify;font-family: sans-serif; font-size: 12px; margin-top: 0in; margin-bottom: 0in; color: #000000; widows: 2; orphans: 2 }
 		place {color:#243f60} 
-		P.head { color: #243f60;font-size: 15px;margin-top:50px;font-weight:bold;font-weight:bold;text-align: center}
-		P.title{ font-size: 14px;margin-top:20px;text-align: justify;margin-right:20px; }
-		P.subtitle{ max-width:5000px;margin:0 auto;font-size:12px;margin-bottom: 0.17in;font-style:italic}
-		A:link { color: #243f60 }
+		P.head { color: #243f60;font-size: 24px;margin-top:50px;font-weight:bold;font-weight:bold;text-align:}
+		P.title{ font-size: 18px;margin-top:20px;margin-right:0px;text-align: }
+		P.subtitle{ max-width:5000px;margin:0 auto;font-size:14px;margin-bottom: 0.17in;font-style:italic}
+		a:link { color: #243f60}
 		ul{ margin:10px	; padding:0 }
 		li{ margin:8px ; margin-bottom:12px; padding:0; List-style:none}
 		strong {color:#243f60;width:90px; display:inline-block}
 		hr { margin-top: 4px;margin-bottom: 4px; border: 0; border-top: 1px solid #ccc}
+		span {background:#243f60; display: inline-block;height: 4px;margin-right: 10px;width: 45px}
 	</STYLE>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
@@ -29,71 +30,178 @@
 </HEAD>
 
 <BODY>	
-
+<!--Navigation container-->
 <div class="navbar navbar-default">
 	<div Class="container">
 	     <div id="navbar" class="collapse navbar-collapse">  
-			<div class="navbar-header">
-				<a class ="navbar-brand" >
-					<div>Simon <strong>DEFRENET </strong></div>
-				</a>
-			</div>
-	      	<div class="navbar-collapse collapse">
-        		<ul class="navbar-text navbar-left">
-        		Connect with me on
-        		<a href="https://hk.linkedin.com/in/simondefrenet" target="_top"> linkedin 
-        		</a>
-         		or send me an
-				<a href="mailto:simon.defrenet@gmail.com?Subject=Contact" target="_top">email
-				</a>
+        		<ul class="nav navbar-nav navbar-left">
+        			<li><a>Simon <strong>DEFRENET </strong></a></li>
+        			<li><a href="https://hk.linkedin.com/in/simondefrenet" target="_top"> Linkedin </a></li>
+					<li><a href="mailto:simon.defrenet@gmail.com?Subject=Contact" target="_top">Email </a></li>
   				</ul>
-		          <ul class="nav navbar-nav navbar-right">
+		        <ul class="nav navbar-nav navbar-right">
+		        	<li><a href="#WorkExperience">Work Experience</a></li>
          			<li><a href="#Education">Education</a></li>
-        	  		<li><a href="#WorkExperience">Work Experience</a></li>
+         			<li><a href="#Skills">Skills</a></li>
          			<li><a href="#Project">Projects</a></li>
         		</ul>
-			</div>	
     	</div>
 	</div>
 </div>
 
+<!--intro container-->
 <div ID="Introduction" class="container">
-	<div class="row">
-		<div class="col-md-12"  STYLE="margin-top:40px">
-		<div class="title">
-			<br>
-			<br>
- 		</div>
- 	</div>
- 		<div class="row">
-	 		<div class="col-md-5">
- 				<div class="box-resume" STYLE="border:3px solid #ccc; padding:30px 0 0 0;margin-top:10%;margin-left:10%		">
-	 		<div class="center-top" STYLE=" margin-bottom:20%; margin-top:-20%">
- 			<img STYLE="float:none; margin-left:30%;MARGIN-TOP:-30%; border-radius:10%" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAejAAAAJDMzY2NjMDVmLTNhY2MtNGQ5My1hMDk3LTJmNGZiNDA5ZWE1YQ.jpg" alt class="img-responsive" height="200" width="200" >	
- 			</div>
- 			<ul>
-       	 	<li><strong>Full Name</strong>Simon Hugo Defrenet</li>
-       	 	<li><strong>Nationality</strong>FRANCE</li>
-       	 	<li><strong>Location</strong>HONG KONG</li>
-       	 	<li><strong>Email</strong><A HREF="mailto:simon.defrenet@gmail.com">simon.defrenet@gmail.com </A></li>
-       	 	<li><strong>Interests</strong>Aikido (martial arts) for 10 years</li>
-       	 	<li><strong></strong>Art and painting, </li>
-		<li><strong></strong>Art promotion in non profit organization </li>
-       	 	<li><strong></strong>Ukulele</li>
-       	 	<li><strong></strong>Traveling</li>
-        </ul>	
- 		</div>
- 			</div>
-			<div class="col-md-7">
-			<P CLASS="head" > Results-oriented project manager/senior business analyst	
-			<P CLASS="title"> with a good understanding of financial organizations and strong skills in project execution, business process improvement and change management. <br>
-				Development of analytical and synthesis skills along with critical thinking and problem solving approaches, to design solutions answering local specificities in a global environment. <br>
-				Strong Facilitation and communication skills, partnering with senior managers, business owners, sponsors, process owners, operational teams, clients and vendors.
-				</P> 	
- 			<div ID="Education" class="Container" STYLE="margin-top:40px">
+	<div class="row" STYLE="margin-top:10%">
+ 			<div class="row">
+	 			<div class="col-md-5">
+ 					<div class="box-resume" STYLE="border:3px solid #ccc; padding:30px 0 0 0;margin-top:5%;margin-left:10%">
+	 					<div class="center-top" STYLE=" margin-bottom:10%; margin-top:-10%">
+ 							<img STYLE="float:none; margin-left:30%;margin-top:-30%; border-radius:10%" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAejAAAAJDMzY2NjMDVmLTNhY2MtNGQ5My1hMDk3LTJmNGZiNDA5ZWE1YQ.jpg" alt class="img-responsive" height="200" width="200" >	
+ 						</div>
+ 						<ul>
+    				   	 	<li><strong>Full Name</strong>Simon Hugo Defrenet</li>
+   				    	 	<li><strong>Nationality</strong>FRANCE</li>
+				       	 	<li><strong>Location</strong>HONG KONG</li>
+ 				      	 	<li><strong>Email</strong><A HREF="mailto:simon.defrenet@gmail.com">simon.defrenet@gmail.com </A></li>
+ 				      	 	<li><strong>Phone</strong>+852 5328 2070</li>
+							<li><br></li>
+
+        				</ul>	
+ 					</div>
+ 				</div>
+				<div class="col-md-7">
+					<P CLASS="head">Simon <strong>DEFRENET</strong></P>
+					<P CLASS="title">Project manager / Senior business analyst</P>
+					<br>
+					<P class="subtitle"> Good understanding of financial organizations and strong skills in project execution, <br>business process improvement and change management. <br>
+					<br>
+					Analytical and synthesis skills along with critical thinking and problem solving approaches. <br>
+					<br>
+					Strong Facilitation and communication skills, partnering with senior managers, business owners, sponsors, process owners, operational teams, clients and vendors.</P> 	 	
+					<br>
+						<a href="Resume-Simon Defrenet.pdf" STYLE="border: 2px solid #ccc; border-radius: 30px; padding: 15px 40px"> <i class="fa fa-download "></i> Download My CV</a>                
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-md-5">
+ 					<div ID="skills" class="Container" STYLE="margin-top:40px">				
+						<div class="title">
+							<H3><B>Skills</B></H3>
+ 						</div>
 						<div class="row">
 							<div class="col-md-2">
-								<div class="icon" STYLE="text-align:center; margin-top: 30px">
+								<div class="icon" STYLE="text-align:center">
+									<i class="fa fa-briefcase"></i>
+									<p style="text-align:center">Expertise</p>
+								</div>
+							</div>
+							<div class="col-md-10">
+								<div class="desc">
+									<p>Business Analysis, Change Management, Project Management, Risk Management, 
+									<br>Lean Six Sigma, Design thinking
+									<br>Agile, Agile at scale, Scrum, sprint and backlog management
+									</p>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-2">
+								<div class="icon" STYLE="text-align:center">
+									<i class="fa fa-wrench"></i>
+									<p style="text-align:center">Technics</p>
+								</div>
+							</div>
+							<div class="col-md-10">
+								
+								<div class="desc">
+									<p> Advanced skills in MS Office, Visio, MS Project<br>
+									   Knowledge of Business Object, Quality center, Jira</p>
+								</div>
+								<ul>
+									<li>
+										<p>SQL</p>
+										<span></span>
+										<span></span>
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+									</li>
+									<li>
+										<p>CSS/HTML</p>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+									</li>
+									<li>
+										<p>Python</p>
+										<span></span>
+										<span></span>
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+										<span STYLE="opacity: 0.3; background:#888888;"></span>	
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-2">
+								<div class="icon" STYLE="text-align:center">
+									<i class="fa fa-language"></i>
+									<p style="text-align:center">Language</p>
+								</div>
+							</div>
+							<div class="col-md-10">  	
+								<ul>
+											<li>
+												<p>English</p>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+											</li>
+											<li>
+												<p>French</p>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</li>
+											<li>
+												<p>German</p>
+												<span></span>
+												<span></span>
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+											</li>											
+											<li>
+												<p>Cantonese</p>
+												<span></span>
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+												<span STYLE="opacity: 0.3; background:#888888;"></span>	
+											</li>					
+										</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-7">
+ 					<div ID="Education" class="Container" STYLE="margin-top:40px">
+ 						<div class="title">
+							<H3><B>Education</B></H3>
+ 						</div>
+						<div class="row">
+							<div class="col-md-2">
+								<div class="icon" STYLE="text-align:center">
 									<i class="fa fa-graduation-cap"></i>
 									<p style="text-align:center">Education</p>
 								</div>
@@ -108,55 +216,8 @@
 								</div>
 							</div>
 						</div>
+						<br>
 						<div class="row">
-							<div class="col-md-2">
-								<div class="icon" STYLE="text-align:center">
-									<i class="fa fa-briefcase"></i>
-									<p style="text-align:center">Skills</p>
-								</div>
-							</div>
-							<div class="col-md-10">
-								<div class="desc">
-									<br>
-									<p>Business Analysis, Change Management, Project Management, Risk Management, 
-									<br>Lean Six Sigma, Design thinking
-									<br>Agile, Agile at scale, Scrum, sprint and backlog management
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-2">
-								<div class="icon" STYLE="text-align:center">
-									<i class="fa fa-wrench"></i>
-									<p style="text-align:center">Technics</p>
-								</div>
-							</div>
-							<div class="col-md-10">
-								<div class="desc">
-									<br>
-									<p> Advanced skills in MS Office, Visio, MS Project<br>
-									   Knowledge of Business Object, Quality center, Jira<br>
-									   Knowledge of SQL, CSS, HTML </p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-2">
-								<div class="icon" STYLE="text-align:center">
-									<i class="fa fa-language"></i>
-									<p style="text-align:center">Language</p>
-								</div>
-							</div>
-							<div class="col-md-10">
-								<div class="desc">
-									<br>
-									<p>French (native), English (Fluent), German (Basic), Cantonese (Beginner) <br>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="row item wow fadeInDown">
 							<div class="col-md-2">
 								<div class="icon" STYLE="text-align:center">
 									<i class="fa fa-eye"></i>
@@ -165,19 +226,57 @@
 							</div>
 							<div class="col-md-10">
 								<div class="desc">
-									<br>
 										<p>Lean Six Sigma Green Belt, Lean Management, ITIL Foundation<br>Lean Six Sigma Black Belt, Facilitation Skills, Kaizen, Lean Six Sigma Yellow Belt <br> SG CIB asia pac graduate training for GBS functions</p>
 								</div>
 							</div>
 						</div>
-						
 					</div>
-					
-				</div>
+					<div ID="Interests" class="Container">
+					 	<div class="title">
+							<H3><B>Interests</B></H3>
+							<div class="row">
+								<div class="col-md-2">
+									<div class="icon" STYLE="text-align:center">
+										<i class="fa fa-balance-scale"></i>
+										<p style="text-align:center">Interests</p>
+									</div>
+								</div>
+								<div class="col-md-10">
+									<div class="desc">
+										<p>Aikido (martial arts) for 10 years, <br>
+										Art and painting,<br>
+										Ukulele,<br>
+										Traveling</p>
+								</div>
+							</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-2">
+									<div class="icon" STYLE="text-align:center">
+										<i class="fa fa-info-circle"></i>
+										<p style="text-align:center">Volunteering</p>
+									</div>
+								</div>
+								<div class="col-md-10">
+									<div class="desc">
+										<h4>HK Walls</h4>
+										<p class="subtitle" STYLE="font-size: 12px;">Non-profit arts organisation that aims to promote street art
+										and create opportunities for artists <br> to showcase their talent through the medium of street art and street culture.</p>
+								</div>
+							</div>
+							</div>
+ 						</div>
+
+					</div>
+
+			
+			</div>
 		</div>
  	</div>
 </div>
 
+<!--Work experience container-->
 <Div ID="WorkExperience" class="container">
 	<div class="row">
 		<div class="col-md-12"  STYLE="margin-top:40px">
@@ -195,20 +294,21 @@
 				<div class="desc" STYlE="border-left:2px solid #ccc;padding:10px 10px 10px 40px; position:relative">
 					<h4>Head of Asiapac PnL, Risk and Market Data Technology</h4>
 					<p class="subtitle"> Societe Generale, Corporate and Investment Banking (SG CIB) <br> Hong Kong, HONG KONG SAR</p>
-					<p>Manage and develop the team (7 direct reports)</p>
+					<p>Manage and develop the team (9 direct reports)</p>
 					<p>Business Relationship Manager (BRM) for Product Control Department</p>
 					<p>Manage independently large scale projects</p>
+					<p>Act as a scrum master</p>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="take" STYLE="border-left:2px solid #ccc;padding:20px 10px 40px 40px;text-align:left;font-size: 16px; position:relative">
 					<p><br>Setting objectives and defining team and individuals development plans, staff appraisals <br>
 					Coaching and mentoring <br>
+					Set up fast IT development environment and transition to agile and dev/ops practises<br>
 					Developing and maintaining best practices, knowledge and change management policies <br>
 					Budget management and resource planning<br>
-					Business Relationship Manager for Product Control Department<br>
 					Definition of the roadmap and IS strategy<br>
-					Set SLA, optimize production monitoring and reduce incidents in partnership with production teams<br>
+					Set SLA, optimize production monitoring and incidents management<br>
 					Steer project portfolio and report to regional head of Finance and Product Control</p>	 
 				</div>
 			</div>
@@ -294,81 +394,82 @@
 
 <Div ID="Project" class="container">
 	<div class="row">
-		<div class="col-md-12" STYLE="margin-top:40px">
-			<div class="title">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="title">
 				<H3><B>Projects</B></H3>
 				<P CLASS="title" STYLE="text-align:center; margin-bottom:30px"> 
-				Key achievements and realization to date include but are not limited to the major initiatives below <br> delivering constantly business values over years:
+				Key achievements and realizations to date include but are not limited to the major initiatives below <br> delivering constantly business values over years:
 				</P> 	
-			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-					<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 0px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#3d4856;border-radius: 5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc; position: absolute; width:80%;height:180px;left: 10%;padding-top: 20%;text-align: center;background-color:#3d4856;border-radius: 5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 									Global tool deployment for Taipei Branch
 								</div>
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 									40 Tools, 300Keur budget
 								</div>
 					</div>
 				</div>
-			<div class="col-md-4">
-					<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 0px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#667990;border-radius: 5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc;position: absolute; width:80%;height:180px;left: 10%;padding-top: 20%;text-align: center;background-color:#667990;border-radius: 5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 									Global tool deployment for Mumbai Branch
 								</div>
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 									40 Tools, 350Keur budget
 								</div>
 					</div>
 					
-					</div>
-			<div class="col-md-4">
-					<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 0px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#3d4856;border-radius: 5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+				</div>
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc;position: absolute; width:80%;height:180px;left: 10%;padding-top: 20%;text-align: center;background-color:#3d4856;border-radius: 5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 									Desktops Inventory and Purchase Process (IT)
 								</div>
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 									Estimated Savings USD$ 335,000
 								</div>
 					</div>
 				</div>
-		</div>			
-		<div class="row">
-			<div class="col-md-4">
-					<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 200px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#667990;border-radius:5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+			</div>			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc;position: absolute; width:80%;height:180px;left: 10%;top: 200px;padding-top: 15%;text-align: center;background-color:#667990;border-radius:5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 										Client On-Boarding Process review <br>FO to BO, Compliance, KYC	
-								</div>
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						</div>
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 										Execution Capacity increased by 600% <br>
 										Defects Reduction from 30% to 10%
-								</div>
+						</div>
 					</div>
 				</div>
-			<div class="col-md-4">
-					<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 200px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#3d4856;border-radius: 5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc;position: absolute; width:80%;height:180px;left: 10%;top: 200px;padding-top: 15%;text-align: center;background-color:#3d4856;border-radius: 5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 									High Grade Bonds business development <br>FO to BO process design
 								</div>
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 										Success Launch of New Business
-								</div>
+						</div>
 					</div>
 				</div>
-			<div class="col-md-4">
-						<div class="r-item" STYLE="position: absolute; width:300px;height:180px;left: 10%;top: 200px;right: 0px;bottom: 0px;padding-top: 20%;text-align: center;background-color:#667990;border-radius: 5px">
-								<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
+				<div class="col-md-4">
+					<div class="r-item" STYLE="border:4px solid #ccc;position: absolute; width:80%;height:180px;left: 10%;top: 200px;padding-top: 15%;text-align: center;background-color:#667990;border-radius: 5px">
+						<div class="project-name" STYLE="position: relative; top:0px; width: 100%; color:#fff;">
 									Regulated Currencies - CNY deliverable in Hong Kong (CNH) 
 								</div>
-
-								<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
+						<div class="project-details" STYLE="position: relative; top:0px; width: 100%; color:#fff; border-top: 1px solid">
 									FX, IRD, FXO and commodities chains
 								</div>
 					</div>
 				</div>	
 		</div>		
+		</div>
 	</div>	
 </div>
 
@@ -399,9 +500,9 @@
 <Div ID="Bottom" class="container">		
 	<div class="row">
 		<div class="col-md-12">
-			<div class="Item">
+			<div class="Item" STYLE="text-align: center">
 			<hr>
-				&copy; Simon <strong>DEFRENET </strong> 2017
+				&copy; Simon <strong>DEFRENET </strong> 2018
 			</div>
 	</div>
 	</div>
